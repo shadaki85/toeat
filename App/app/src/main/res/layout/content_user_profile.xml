@@ -8,7 +8,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".UserProfileActivity"
     tools:showIn="@layout/activity_user_profile"
-    android:background="#446aca"
+    android:background="@color/bg"
     android:weightSum="1">
 
     <LinearLayout
@@ -23,7 +23,7 @@
             android:id="@+id/nameText"
             android:layout_gravity="center_horizontal"
             android:textSize="25dp"
-            android:textColor="#fb9803"
+            android:textColor="@color/titles"
             android:hint="userName"
             android:textStyle="bold"
             android:enabled="false"
@@ -48,17 +48,20 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="@string/userMail"
                     android:id="@+id/emailLabel"
+                    android:textColor="@color/titles"
                     android:textStyle="bold"
                     android:layout_marginLeft="15dp" />
 
-                <!--<TextView
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="Age:"
                     android:id="@+id/ageLabel"
+                    android:textColor="@color/titles"
                     android:layout_marginTop="10dp"
-                    android:textStyle="bold" />-->
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"/>
 
             </LinearLayout>
 
@@ -74,25 +77,25 @@
                     android:id="@+id/emailText"
                     android:layout_gravity="center_horizontal"
                     android:textSize="15dp"
-                    android:textColor="#000000"
+                    android:textColor="@color/lightText"
                     android:hint="email"
                     android:layout_marginTop="3dp"
                     android:textAlignment="textStart"
                     android:gravity="start"
                     android:layout_marginLeft="10dp" />
 
-                <!--<TextView
+                <TextView
                     android:layout_width="244dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/ageText"
                     android:layout_gravity="center_horizontal"
                     android:textSize="15dp"
-                    android:textColor="#000000"
+                    android:textColor="@color/lightText"
                     android:hint="age"
                     android:layout_marginTop="13dp"
                     android:textAlignment="textStart"
                     android:gravity="start"
-                    android:layout_marginLeft="10dp" />-->
+                    android:layout_marginLeft="10dp" />
 
             </LinearLayout>
         </LinearLayout>

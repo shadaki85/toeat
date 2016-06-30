@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ReviewDetailActivity"
-    android:background="#446aca"
+    android:background="@color/bg"
     android:weightSum="1">
 
     <include
@@ -96,7 +96,7 @@
                     android:id="@+id/reviewAuthor"
                     android:layout_gravity="center_horizontal"
                     android:textSize="15dp"
-                    android:textColor="#ffffff"
+                    android:textColor="@color/lightText"
                     android:hint="author"
                     android:layout_marginTop="3dp"
                     android:textAlignment="textStart"
@@ -109,7 +109,7 @@
                     android:id="@+id/reviewComment"
                     android:layout_gravity="center_horizontal"
                     android:textSize="15dp"
-                    android:textColor="#ffffff"
+                    android:textColor="@color/lightText"
                     android:hint="comment"
                     android:layout_marginTop="13dp"
                     android:textAlignment="textStart"
@@ -120,8 +120,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/ratingBar"
-                    android:progressTint="#ffd500"
-                    android:isIndicator="true"/>
+                    android:progressTint="@color/stars"
+                    android:isIndicator="true"
+                    android:clickable="false"
+                    android:contextClickable="false" />
 
             </LinearLayout>
         </LinearLayout>

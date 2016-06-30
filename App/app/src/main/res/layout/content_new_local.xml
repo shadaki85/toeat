@@ -13,7 +13,7 @@
     tools:context="com.example.svilupposw.ToEat.NewLocalActivity"
     tools:showIn="@layout/activity_new_local"
     android:weightSum="1"
-    android:background="#446aca">
+    android:background="@color/bg">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/textView10"
             android:text="@string/newLocalDetail"
-            android:textColor="#ffffff"
+            android:textColor="@color/lightText"
             android:textSize="18dp"
             android:layout_weight="0.05" />
 
@@ -37,8 +37,8 @@
             android:id="@+id/name"
             android:layout_weight="0.05"
             android:hint="@string/name"
-            android:background="#c5e1ed"
-            android:textColor="#000000"
+            android:background="@color/inputTextBg"
+            android:textColor="@color/darkText"
             android:layout_marginTop="10dp"
             android:textSize="18dp"/>
 
@@ -48,8 +48,8 @@
             android:id="@+id/address"
             android:layout_weight="0.05"
             android:hint="@string/address"
-            android:background="#c5e1ed"
-            android:textColor="#000000"
+            android:background="@color/inputTextBg"
+            android:textColor="@color/darkText"
             android:layout_marginTop="10dp"
             android:textSize="18dp"/>
 
@@ -59,8 +59,8 @@
             android:id="@+id/type"
             android:layout_weight="0.05"
             android:hint="@string/type"
-            android:background="#c5e1ed"
-            android:textColor="#000000"
+            android:background="@color/inputTextBg"
+            android:textColor="@color/darkText"
             android:layout_marginTop="10dp"
             android:textSize="18dp"/>
 
@@ -70,8 +70,8 @@
             android:id="@+id/money"
             android:layout_weight="0.05"
             android:hint="@string/money"
-            android:background="#c5e1ed"
-            android:textColor="#000000"
+            android:background="@color/inputTextBg"
+            android:textColor="@color/darkText"
             android:layout_marginTop="10dp"
             android:textSize="18dp"/>
 
@@ -81,8 +81,8 @@
             android:id="@+id/contact"
             android:layout_weight="0.05"
             android:hint="@string/contact"
-            android:background="#c5e1ed"
-            android:textColor="#000000"
+            android:background="@color/inputTextBg"
+            android:textColor="@color/darkText"
             android:layout_marginTop="10dp"
             android:textSize="18dp"/>
 
@@ -92,8 +92,8 @@
             android:id="@+id/hours"
             android:layout_weight="0.05"
             android:hint="@string/hours"
-            android:background="#c5e1ed"
-            android:textColor="#000000"
+            android:background="@color/inputTextBg"
+            android:textColor="@color/darkText"
             android:layout_marginTop="10dp"
             android:textSize="18dp"/>
 

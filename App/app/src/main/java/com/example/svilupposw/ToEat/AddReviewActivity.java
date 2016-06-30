@@ -67,9 +67,9 @@ public class AddReviewActivity extends AppCompatActivity {
 
                 final String comment = comment_Text.getText().toString();
                 RatingBar ratingBar = (RatingBar) findViewById(R.id.ratingBar);
-                String rating = String.valueOf(ratingBar.getRating());
+                float rating = ratingBar.getRating();
 
-                if (comment.equals("") || rating.equals("")) {
+                if (comment.equals("") || rating == 0.0) {
                     Toast.makeText(getApplicationContext(), getApplicationContext().getResources().getString(R.string.fillFields), Toast.LENGTH_LONG).show();
                 }
                 else {

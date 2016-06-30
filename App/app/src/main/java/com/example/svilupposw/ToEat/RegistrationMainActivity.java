@@ -56,18 +56,28 @@ public class RegistrationMainActivity extends AppCompatActivity {
                     age_editText.setError(getString(R.string.error_invalid_age));
                 }
                 else
-                {age = Integer.parseInt(age_editText.getText().toString());}
+                {
+                    age = Integer.parseInt(age_editText.getText().toString());
+                }
 
                 boolean cancel = false;
                 View focusView = null;
 
-                if (TextUtils.isEmpty(password) || !(password.length() > 4)) {
-                    password_editText.setError(getString(R.string.error_invalid_password));
+                if (TextUtils.isEmpty(password)) {
+                    password_editText.setError(getString(R.string.error_empty_password));
+                    focusView = password_editText;
+                    cancel = true;
+                } else if (!(password.length() > 4)){
+                    password_editText.setError(getString(R.string.error_password_too_short));
                     focusView = password_editText;
                     cancel = true;
                 }
 
-                if (TextUtils.isEmpty(email) || !email.contains("@")) {
+                if (TextUtils.isEmpty(email) ) {
+                    email_editText.setError(getString(R.string.error_empty_email));
+                    focusView = email_editText;
+                    cancel = true;
+                } else if (!email.contains("@")) {
                     email_editText.setError(getString(R.string.error_invalid_email));
                     focusView = email_editText;
                     cancel = true;
@@ -96,7 +106,6 @@ public class RegistrationMainActivity extends AppCompatActivity {
                                 public void onAuthenticated(AuthData authData) {
                                     System.out.println("User ID: " + authData.getUid() + ", Provider: " + authData.getProvider());
 
-                                    // Authentication just completed successfully :)
                                     Map<String, String> map = new HashMap<>();
                                     map.put("provider", authData.getProvider());
                                     if (authData.getProviderData().containsKey("displayName")) {
@@ -137,7 +146,7 @@ public class RegistrationMainActivity extends AppCompatActivity {
                         public void onError(FirebaseError firebaseError) {
                             // there was an error
                             Log.e("creation", "error");
-                            Toast.makeText(getApplicationContext(), getString(R.string.error), Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(), getString(R.string.creationError), Toast.LENGTH_LONG).show();
                         }
                     });
                 }

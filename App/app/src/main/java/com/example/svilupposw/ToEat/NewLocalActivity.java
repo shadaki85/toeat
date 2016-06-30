@@ -14,6 +14,19 @@ import com.firebase.client.Firebase;
 
 public class NewLocalActivity extends AppCompatActivity {
 
+    public static boolean isNumeric(String str)
+    {
+        try
+        {
+            double d = Double.parseDouble(str);
+        }
+        catch(NumberFormatException nfe)
+        {
+            return false;
+        }
+        return true;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,6 +87,12 @@ public class NewLocalActivity extends AppCompatActivity {
 
                 if (name.equals("") || address.equals("")|| type.equals("")|| money.equals("")|| contact.equals("")|| hours.equals("")) {
                     Toast.makeText(getApplicationContext(), getApplicationContext().getResources().getString(R.string.fillFields), Toast.LENGTH_LONG).show();
+                }
+                else if (!isNumeric(money)) {
+                    Toast.makeText(getApplicationContext(), getApplicationContext().getResources().getString(R.string.notNumeric), Toast.LENGTH_LONG).show();
+                }
+                else if (!isNumeric(hours)) {
+                    Toast.makeText(getApplicationContext(), getApplicationContext().getResources().getString(R.string.notNumericH), Toast.LENGTH_LONG).show();
                 }
                 else {
                     Firebase newLocal = MyApplication.getMyFirebaseRef().child("local");

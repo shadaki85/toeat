@@ -108,7 +108,7 @@ public class LocalDetailActivity extends AppCompatActivity {
                     intent.putExtra("localType", localType);
                     intent.putExtra("reviewComment", (String) selectedFromList.getComment());
                     intent.putExtra("reviewAuthor", (String) selectedFromList.getUserName());
-                    intent.putExtra("reviewRating", (String) selectedFromList.getRating());
+                    intent.putExtra("reviewRating", (float) selectedFromList.getRating());
 
                     startActivity(intent);
                 }

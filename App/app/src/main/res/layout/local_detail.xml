@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.svilupposw.ToEat.LocalDetailActivity"
-    android:background="#446aca"
+    android:background="@color/bg"
     android:weightSum="1">
 
     <include
@@ -24,7 +24,7 @@
             android:id="@+id/localName"
             android:layout_gravity="center_horizontal"
             android:textSize="25dp"
-            android:textColor="#fb9803"
+            android:textColor="@color/titles"
             android:hint="localName"
             android:textStyle="bold"
             android:enabled="false"
@@ -37,7 +37,7 @@
             android:id="@+id/localType"
             android:layout_gravity="center_horizontal"
             android:textSize="20dp"
-            android:textColor="#fb9803"
+            android:textColor="@color/titles"
             android:hint="type"
             android:gravity="center_vertical|center_horizontal" />
 
@@ -60,7 +60,7 @@
                     android:text="@string/localAddress"
                     android:id="@+id/textView4"
                     android:textStyle="bold"
-                    android:textColor="#ffffff" />
+                    android:textColor="@color/lightText" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -70,7 +70,7 @@
                     android:id="@+id/textView5"
                     android:layout_marginTop="10dp"
                     android:textStyle="bold"
-                    android:textColor="#ffffff" />
+                    android:textColor="@color/lightText" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -80,7 +80,7 @@
                     android:id="@+id/textView6"
                     android:layout_marginTop="10dp"
                     android:textStyle="bold"
-                    android:textColor="#ffffff" />
+                    android:textColor="@color/lightText" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -90,7 +90,7 @@
                     android:id="@+id/textView7"
                     android:layout_marginTop="10dp"
                     android:textStyle="bold"
-                    android:textColor="#ffffff" />
+                    android:textColor="@color/lightText" />
             </LinearLayout>
 
             <LinearLayout
@@ -105,7 +105,7 @@
                     android:id="@+id/localAddress"
                     android:layout_gravity="center_horizontal"
                     android:textSize="15dp"
-                    android:textColor="#ffffff"
+                    android:textColor="@color/titles"
                     android:hint="address"
                     android:layout_marginTop="3dp"
                     android:textAlignment="textStart"
@@ -118,7 +118,7 @@
                     android:id="@+id/localMoney"
                     android:layout_gravity="center_horizontal"
                     android:textSize="15dp"
-                    android:textColor="#ffffff"
+                    android:textColor="@color/titles"
                     android:hint="money"
                     android:layout_marginTop="13dp"
                     android:textAlignment="textStart"
@@ -131,7 +131,7 @@
                     android:id="@+id/localContact"
                     android:layout_gravity="center_horizontal"
                     android:textSize="15dp"
-                    android:textColor="#ffffff"
+                    android:textColor="@color/titles"
                     android:hint="contact"
                     android:layout_marginTop="13dp"
                     android:textAlignment="textStart"
@@ -144,7 +144,7 @@
                     android:id="@+id/localHours"
                     android:layout_gravity="center_horizontal"
                     android:textSize="15dp"
-                    android:textColor="#ffffff"
+                    android:textColor="@color/titles"
                     android:hint="hours"
                     android:layout_marginTop="13dp"
                     android:textAlignment="textStart"
@@ -159,7 +159,7 @@
             android:text="@string/reviews"
             android:id="@+id/textView8"
             android:layout_gravity="center_horizontal"
-            android:textColor="#fb9803"
+            android:textColor="@color/titles"
             android:textStyle="bold"
             android:textAlignment="center" />
 
@@ -189,8 +189,8 @@
         android:id="@+id/addReview"
         android:layout_gravity="bottom|right"
         android:drawableLeft="@mipmap/star"
-        android:background="#060e54"
-        android:textColor="#ffd500"
+        android:background="@color/buttAddRev"
+        android:textColor="@color/lightText"
         android:layout_marginRight="5dp" />
 
 

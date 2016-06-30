@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#ff3d00</color>
+    <color name="colorPrimaryDark">#d50000</color>
     <color name="colorAccent">#FF4081</color>
     <color name="lightText">#ffffff</color>
-    <color name="darkText">#000000</color>
-    <color name="titles">#fb9803</color>
+    <color name="darkText">#ff3d00</color>
+    <color name="titles">#000000</color>
+    <color name="stars">#ffd500</color>
+    <color name="bg">#ef6c00</color>
+    <color name="buttAddRev">#ff3d00</color>
+    <color name="inputTextBg">#ffffff</color>
 </resources>

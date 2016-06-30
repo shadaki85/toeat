@@ -13,7 +13,7 @@
     tools:context=".AddReviewActivity"
     tools:showIn="@layout/activity_add_review"
     android:weightSum="1"
-    android:background="#446aca">
+    android:background="@color/bg">
 
     <TextView
         android:layout_width="wrap_content"
@@ -22,7 +22,7 @@
         android:id="@+id/localName"
         android:hint="localName"
         android:textStyle="bold"
-        android:textColor="#fb9803"
+        android:textColor="@color/titles"
         android:textSize="25dp" />
 
     <TextView
@@ -31,7 +31,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/commentText"
         android:text="@string/addComment"
-        android:textColor="#ffffff"
+        android:textColor="@color/lightText"
         android:textSize="18dp"
         android:layout_marginTop="15dp" />
 
@@ -41,8 +41,8 @@
         android:id="@+id/comment"
         android:layout_weight="0.05"
         android:hint="comment"
-        android:background="#c5e1ed"
-        android:textColor="#000000"
+        android:background="@color/inputTextBg"
+        android:textColor="@color/darkText"
         android:layout_marginTop="10dp"
         android:textSize="18dp" />
 
@@ -52,7 +52,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/textView9"
         android:text="@string/rate"
-        android:textColor="#ffffff"
+        android:textColor="@color/lightText"
         android:textSize="18dp"
         android:layout_marginTop="15dp" />
 
@@ -60,7 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ratingBar"
-        android:progressTint="#ffd500"
+        android:progressTint="@color/stars"
         android:layout_marginTop="5dp" />
 
 </LinearLayout>

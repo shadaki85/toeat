@@ -42,5 +42,10 @@
     <string name="fillFields">Compilare tutti i campi</string>
     <string name="error_invalid_age">Età non valida!</string>
     <string name="welcomeToast">Benvenuto fra noi </string>
+    <string name="error_empty_email">Il campo Email non può essere vuoto!</string>
+    <string name="error_empty_password">Il campo password non può essere vuoto!</string>
+    <string name="error_password_too_short">La password deve essere più lunga di 4 caratteri!</string>
+    <string name="creationError">C\'è stato un errore con la creazione dell\'account!</string>
+    <string name="noAge">Età non impostata</string>
 
 </resources>

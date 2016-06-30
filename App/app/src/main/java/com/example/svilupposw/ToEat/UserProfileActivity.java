@@ -53,7 +53,7 @@ public class UserProfileActivity extends AppCompatActivity {
 
         TextView nameText = (TextView) findViewById(R.id.nameText);
         TextView emailText = (TextView) findViewById(R.id.emailText);
-        //TextView ageText = (TextView) findViewById(R.id.ageText);
+        TextView ageText = (TextView) findViewById(R.id.ageText);
 
         if (nameText != null) {
             nameText.setText(MyApplication.getName());
@@ -61,9 +61,11 @@ public class UserProfileActivity extends AppCompatActivity {
         if (emailText != null) {
             emailText.setText(MyApplication.getMail());
         }
-        /*if (ageText != null) {
+        if (MyApplication.getAge() != null) {
             ageText.setText(MyApplication.getAge());
-        }*/
+        } else {
+            ageText.setText(R.string.noAge);
+        }
     }
 
 }

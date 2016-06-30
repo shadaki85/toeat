@@ -49,6 +49,7 @@ public class LoginMainActivity extends AppCompatActivity {
                             public void onDataChange(DataSnapshot dataSnapshot) {
 
                                 MyApplication.setName((String) dataSnapshot.child("displayName").getValue());
+                                MyApplication.setAge((String) dataSnapshot.child("displayAge").getValue());
 
                                 Intent intent = new Intent(getApplicationContext(), ListLocalActivity.class);
                                 String userName = ((String)dataSnapshot.child("displayName").getValue());

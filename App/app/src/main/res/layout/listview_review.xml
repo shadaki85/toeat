@@ -18,7 +18,7 @@
             android:layout_height="40dp"
             android:id="@+id/user"
             android:text="userName"
-            android:textColor="#fb9803"
+            android:textColor="@color/titles"
             android:textSize="14dp"
             android:gravity="left"
             android:layout_marginTop="5dp" />
@@ -28,7 +28,7 @@
             android:layout_height="40dp"
             android:id="@+id/nameText"
             android:text="@string/says"
-            android:textColor="#ffffff"
+            android:textColor="@color/lightText"
             android:textSize="14dp"
             android:gravity="center_horizontal"
             android:layout_marginTop="5dp"
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/comment"
         android:text="commentText"
-        android:textColor="#ffffff"
+        android:textColor="@color/lightText"
         android:textSize="14dp"
         android:gravity="left"
         android:maxLength="40"/>
@@ -49,8 +49,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ratingBar"
-        android:progressTint="#ffd500"
-        android:isIndicator="true"/>
+        android:progressTint="@color/stars"
+        android:isIndicator="true"
+        android:clickable="false"
+        android:contextClickable="false" />
 
 
 </LinearLayout>

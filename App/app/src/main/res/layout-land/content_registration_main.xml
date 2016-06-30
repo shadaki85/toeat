@@ -11,7 +11,7 @@
     tools:context=".RegistrationMainActivity"
     tools:showIn="@layout/activity_registration_main"
     android:clickable="false"
-    android:background="#446aca">
+    android:background="@color/bg">
 
     <LinearLayout
         android:id="@+id/email_login_form"

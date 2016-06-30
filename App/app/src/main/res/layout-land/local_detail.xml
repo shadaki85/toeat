@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.svilupposw.ToEat.LocalDetailActivity"
-    android:background="#446aca"
+    android:background="@color/bg"
     android:weightSum="1">
 
     <include
@@ -188,8 +188,8 @@
             android:id="@+id/addReview"
             android:layout_gravity="right"
             android:drawableLeft="@mipmap/star"
-            android:background="#060e54"
-            android:textColor="#ffd500"
+            android:background="@color/stars"
+            android:textColor="@color/buttAddRev"
             android:layout_marginTop="5dp"
             android:layout_marginRight="5dp" />
 

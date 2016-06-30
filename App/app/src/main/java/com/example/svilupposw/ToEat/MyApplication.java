@@ -10,13 +10,13 @@ import com.firebase.client.Firebase;
  */
 public class MyApplication extends Application {
 
-    private static final String FIREBASE_URL = "https://toeat.firebaseio.com/";
+    private static final String FIREBASE_URL = "https://toeat1.firebaseio.com/";
     private static Firebase myFirebaseRef;
 
     private static String myUid;
     private static String mail;
     private static String name;
-    private static int age;
+    private static String age;
 
     public static Firebase getMyFirebaseRef() {
         return myFirebaseRef;
@@ -79,11 +79,11 @@ public class MyApplication extends Application {
         MyApplication.name = name;
     }
 
-    public static int getAge() {
+    public static String getAge() {
         return age;
     }
 
-    public static void setAge(int age) {
+    public static void setAge(String age) {
         MyApplication.age = age;
     }
 

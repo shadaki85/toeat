@@ -12,7 +12,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".LoginMainActivity"
     tools:showIn="@layout/activity_login_main"
-    android:background="#446aca"
+    android:background="@color/bg"
     android:weightSum="1">
 
     <TextView
@@ -25,7 +25,7 @@
         android:layout_alignEnd="@+id/button"
         android:layout_gravity="center_horizontal"
         android:textSize="30dp"
-        android:textColor="#ffffff"
+        android:textColor="@color/lightText"
         android:textAlignment="center" />
 
     <LinearLayout
@@ -62,7 +62,7 @@
                 android:layout_centerHorizontal="true"
                 android:allowUndo="false"
                 android:background="@color/colorPrimaryDark"
-                android:textColor="#ffffff"
+                android:textColor="@color/lightText"
                 android:layout_gravity="left"
                 android:layout_marginTop="10dp"
                 android:textSize="15dp"
@@ -84,7 +84,7 @@
                     android:layout_below="@+id/textView2"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="15dp"
-                    android:textColor="#f2fbff"
+                    android:textColor="@color/lightText"
                     android:drawableLeft="@drawable/mail"
                     android:layout_gravity="left" />
 
@@ -96,9 +96,9 @@
                     android:id="@+id/textMail"
                     android:layout_below="@+id/textView"
                     android:layout_centerHorizontal="true"
-                    android:textColor="#000000"
+                    android:textColor="@color/darkText"
                     android:layout_gravity="left"
-                    android:background="#c5e1ed" />
+                    android:background="@color/inputTextBg" />
 
                 <TextView
                     android:layout_width="180dp"
@@ -110,7 +110,7 @@
                     android:layout_below="@+id/textView"
                     android:layout_centerHorizontal="true"
                     android:layout_gravity="center_horizontal|left"
-                    android:textColor="#ffffff"
+                    android:textColor="@color/lightText"
                     android:drawableLeft="@drawable/password" />
 
                 <EditText
@@ -121,8 +121,8 @@
                     android:id="@+id/textPsw"
                     android:layout_below="@+id/textView3"
                     android:layout_alignStart="@+id/textMail"
-                    android:textColor="#000000"
-                    android:background="#c5e1ed"
+                    android:textColor="@color/darkText"
+                    android:background="@color/inputTextBg"
                     android:imeOptions="flagNoExtractUi"/>
 
         </LinearLayout>

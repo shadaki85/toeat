@@ -1,13 +1,10 @@
 package com.example.svilupposw.ToEat;
 
-/**
- * Created by stage on 09/05/2016.
- */
 public class Review {
 
     protected String id;
     protected String comment;
-    protected String rating;
+    protected float rating;
     protected String userId;
     protected String userName;
     protected String localId;
@@ -19,7 +16,7 @@ public class Review {
         this.id = id;
     }
 
-    public Review(String id, String comment, String rating, String userId, String localId, String userName) {
+    public Review(String id, String comment, float rating, String userId, String localId, String userName) {
         this.id = id;
         this.comment = comment;
         this.rating = rating;
@@ -28,7 +25,7 @@ public class Review {
         this.userName = userName;
     }
 
-    public Review(String comment, String rating, String userId, String localId, String userName) {
+    public Review(String comment, float rating, String userId, String localId, String userName) {
         this.comment = comment;
         this.rating = rating;
         this.userId = userId;
@@ -52,11 +49,11 @@ public class Review {
         this.comment = comment;
     }
 
-    public String getRating() {
+    public float getRating() {
         return rating;
     }
 
-    public void setRating(String rating) {
+    public void setRating(float rating) {
         this.rating = rating;
     }
 

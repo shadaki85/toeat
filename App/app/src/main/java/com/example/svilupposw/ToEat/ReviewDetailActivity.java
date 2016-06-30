@@ -65,9 +65,9 @@ public class ReviewDetailActivity extends AppCompatActivity {
         TextView localCommentText = (TextView) findViewById(R.id.reviewComment);
         localCommentText.setText(comment);
 
-        final String rating = recdData.getString("reviewRating");
+        final float rating = recdData.getFloat("reviewRating");
         RatingBar ratingBar = (RatingBar) findViewById(R.id.ratingBar);
-        ratingBar.setRating(Float.parseFloat(rating));
+        ratingBar.setRating(rating);
 
     }
 }
